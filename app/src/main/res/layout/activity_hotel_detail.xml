@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mapbox="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:context=".Hotel_detail_Activity">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_detail_hotel"
+                android:layout_width="fill_parent"
+                android:layout_height="?actionBarSize" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/img_hotel_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/img_bg"
+                    android:backgroundTint="@color/xam"
+                    android:scaleType="fitXY"
+                    android:visibility="gone" />
+
+
+                <VideoView
+                    android:id="@+id/video_view_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_gravity="center"
+                    android:visibility="visible">
+
+                </VideoView>
+
+                <ImageView
+                    android:id="@+id/image_play_detail"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/button_bg"
+                    android:contentDescription="Phat nhac"
+                    android:src="@android:drawable/ic_media_play"
+                    android:visibility="visible" />
+            </FrameLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/name_hotel_deail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:text="@string/tenKS"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/address_hotel_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:paddingBottom="5dp"
+                    android:text="Địa chỉ"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_price_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:fontFamily="@font/roboto"
+                        android:paddingLeft="6dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:text="Giá"
+                        android:textSize="16sp"></TextView>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/tv_time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/roboto"
+                            android:paddingLeft="6dp"
+                            android:paddingTop="5dp"
+                            android:paddingBottom="5dp"
+                            android:text="Thời gian"
+                            android:textSize="16sp"
+                            mapbox:layout_constraintBottom_toBottomOf="parent"
+                            mapbox:layout_constraintStart_toStartOf="parent"
+                            mapbox:layout_constraintTop_toTopOf="parent"></TextView>
+
+                        <TextView
+                            android:id="@+id/tv_trangthai"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="right"
+                            android:paddingTop="5dp"
+                            android:paddingRight="6dp"
+                            android:paddingBottom="5dp"
+                            android:text="Trang thai"
+                            android:textSize="16sp"
+                            mapbox:layout_constraintBottom_toBottomOf="parent"
+                            mapbox:layout_constraintEnd_toEndOf="parent"
+                            mapbox:layout_constraintTop_toTopOf="parent">
+
+                        </TextView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/khungtenich"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"></LinearLayout>
+
+                <com.mapbox.mapboxsdk.maps.MapView
+                    android:id="@+id/map_box_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    mapbox:mapbox_cameraZoom="11">
+
+                    <Button
+                        android:id="@+id/lay_map_hotel"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:fontFamily="@font/roboto"
+                        android:text="Dẫn Đường"
+                        android:textAllCaps="false"
+                        android:textSize="18sp" />
+                </com.mapbox.mapboxsdk.maps.MapView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:fontFamily="@font/roboto"
+                android:padding="5dp"
+                android:text="Bình luận"
+                android:textSize="15sp"></TextView>
+            <include layout="@layout/recyclerview_comment_detail"></include>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8.5dp"
+            android:layout_marginRight="8.5dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="50dp"
+                android:layout_height="35dp"
+                android:src="@drawable/ic_comment"></de.hdodenhof.circleimageview.CircleImageView>
+
+            <TextView
+                android:id="@+id/btn_binhluan"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="4dp"
+                android:text="Viết bình luận của bạn...."
+                android:textSize="16dp"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

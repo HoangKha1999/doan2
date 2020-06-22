@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#80000000</color>
+    <color name="colorPrimaryDark">#80000000</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="Xanh_ngoc">#00bfff</color>
+    <color name="trang">#FFFFFF</color>
+    <color name="xam">#D5D5D5</color>
+    <color name="transparent">#00bfff</color>
+</resources>

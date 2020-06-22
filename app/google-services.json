@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "839132078918",
+    "firebase_url": "https://hotel-kha.firebaseio.com",
+    "project_id": "hotel-kha",
+    "storage_bucket": "hotel-kha.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839132078918:android:05ed4af61df1d5be217b47",
+        "android_client_info": {
+          "package_name": "com.example.homestay_kha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839132078918-s80a0tgj83ud936jrnrme1b83tci686t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.homestay_kha",
+            "certificate_hash": "f2b9835f9a5408a28ba48d43497fbc00746f1f68"
+          }
+        },
+        {
+          "client_id": "839132078918-mkupnrmbtk244hnvj651tnp8uemau1ha.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDRu7V8fNINktwC364hVqDkCztn6Eqx4PM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "839132078918-mkupnrmbtk244hnvj651tnp8uemau1ha.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
